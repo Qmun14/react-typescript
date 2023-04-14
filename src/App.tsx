@@ -1,5 +1,6 @@
 import './App.css';
 import { Button } from './components/Button';
+import { Container } from './components/Container';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
@@ -46,6 +47,7 @@ function App() {
       }
       } />
       <Input value='' handleChange={(event) => console.log(event)} />
+      <Container styles={{ fontSize: "20px", margin: "30px", color: 'blue' }} />
     </div>
   );
 }
