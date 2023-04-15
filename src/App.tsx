@@ -8,6 +8,8 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
+import { LoggedIn } from './components/state/LoggedIn';
+import { User } from './components/state/User';
 
 function App() {
 
@@ -48,6 +50,8 @@ function App() {
       } />
       <Input value='' handleChange={(event) => console.log(event)} />
       <Container styles={{ fontSize: "20px", margin: "30px", color: 'blue' }} />
+      <LoggedIn />
+      <User />
     </div>
   );
 }
