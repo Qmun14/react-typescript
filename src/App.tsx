@@ -8,6 +8,7 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
+import { Counter } from './components/state/Counter';
 import { LoggedIn } from './components/state/LoggedIn';
 import { User } from './components/state/User';
 
@@ -52,6 +53,7 @@ function App() {
       <Container styles={{ fontSize: "20px", margin: "30px", color: 'blue' }} />
       <LoggedIn />
       <User />
+      <Counter />
     </div>
   );
 }
