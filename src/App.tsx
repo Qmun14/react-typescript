@@ -10,9 +10,11 @@ import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { Box } from './components/context/Box';
 import { ThemeContextProvider } from './components/context/ThemeContext';
+import { User } from './components/context/User';
+import { UserContextProvider } from './components/context/UserContext';
 import { Counter } from './components/state/Counter';
 import { LoggedIn } from './components/state/LoggedIn';
-import { User } from './components/state/User';
+// import { User } from './components/state/User';
 
 function App() {
 
@@ -54,11 +56,14 @@ function App() {
       <Input value='' handleChange={(event) => console.log(event)} />
       <Container styles={{ fontSize: "20px", margin: "30px", color: 'blue' }} />
       <LoggedIn />
-      <User />
+      {/* <User /> */}
       <Counter />
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
