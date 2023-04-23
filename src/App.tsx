@@ -13,6 +13,8 @@ import { MutableRef } from './components/ref/MutableRef';
 import { LoggedIn } from './components/state/LoggedIn';
 import { User } from './components/state/User';
 import { Counter } from './components/class/Counter'
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 
 function App() {
 
@@ -58,6 +60,7 @@ function App() {
       {/* <Counter /> */}
       <MutableRef />
       <Counter message='Nilai Counter adalah' />
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
