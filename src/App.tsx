@@ -9,9 +9,10 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { MutableRef } from './components/ref/MutableRef';
-import { Counter } from './components/state/Counter';
+// import { Counter } from './components/state/Counter';
 import { LoggedIn } from './components/state/LoggedIn';
 import { User } from './components/state/User';
+import { Counter } from './components/class/Counter'
 
 function App() {
 
@@ -54,8 +55,9 @@ function App() {
       <Container styles={{ fontSize: "20px", margin: "30px", color: 'blue' }} />
       <LoggedIn />
       <User />
-      <Counter />
+      {/* <Counter /> */}
       <MutableRef />
+      <Counter message='Nilai Counter adalah' />
     </div>
   );
 }
